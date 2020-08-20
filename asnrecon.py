@@ -227,8 +227,8 @@ if __name__ == '__main__':
     setdefaulttimeout(DEFAULT_SOCKET_TIMEOUT)
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--domain', dest='domain', action='store', help='single domain')
-    parser.add_argument('--file', dest='file', action='store', help='list of domains')
+    parser.add_argument('-d', '--domain', dest='domain', action='store', help='single domain')
+    parser.add_argument('-f', '--file', dest='file', action='store', help='list of domains')
     args = parser.parse_args()
 
     # noinspection PyBroadException
